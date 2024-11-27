@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Região</title>
+</head>
+<body class="h-screen flex gap-5 justify-center items-center bg-gradient-to-r from-yellow-500 to-green-600 text-blue-950 text-2xl font-bold">
+    <script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					spacing: {
+					},
+					fontSize: {
+					},
+					colors: {
+					}
+				}
+			}
+		}
+	</script>
+
+<form class= "*:rounded-md *:w-40">
+    <label for="região">Região</label>
+    <select name="região" id="região" onchange="buscaEstados()">
+        <option value="">Selecione</option>
+    </select>
+
+    <label for="estado">Estado</label>
+    <select name="estado" id="estado" onchange="buscaCidades()">
+        <option value="">Selecione</option>
+    </select>
+
+    <label for="cidade">Cidade</label>
+    <select name="cidade" id="cidade">
+        <option value="">Selecione</option>
+    </select>
+</form>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
