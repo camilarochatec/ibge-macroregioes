@@ -22,21 +22,23 @@
 		}
 	</script>
 
-<form class= "*:rounded-md *:w-40">
+<form class="*:rounded-md *:w-40">
     <label for="região">Região</label>
     <select name="região" id="região" onchange="buscaEstados()">
         <option value="">Selecione</option>
     </select>
 
     <label for="estado">Estado</label>
-    <select name="estado" id="estado" onchange="buscaCidades()">
+    <select name="estado" id="estado" disabled onchange="buscaCidades()">
         <option value="">Selecione</option>
     </select>
 
     <label for="cidade">Cidade</label>
-    <select name="cidade" id="cidade">
+    <input type="text" id="cidade" placeholder="Escolher cidade" list="cidades_opcoes" disabled>
+    <datalist id="cidades_opcoes"></datalist>
+    <!-- <select name="cidade" id="cidade" disabled>
         <option value="">Selecione</option>
-    </select>
+    </select> -->
 </form>
 
 
